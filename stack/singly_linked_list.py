@@ -22,7 +22,7 @@ class LinkedList:
         else:
             self.tail = node
             self.head = node
-    
+
     def remove_from_tail(self):
         value = self.tail.value
         self.delete(self.tail)
