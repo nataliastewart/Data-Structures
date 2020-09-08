@@ -11,6 +11,7 @@ return elements in Last In First Out order.
    implementing a Stack?
 """
 
+
 class Stack:
     def __init__(self):
         self.size = 0
@@ -25,3 +26,26 @@ class Stack:
     def pop(self):
         if len(self.storage) > 0:
             return self.storage.pop()
+
+#------------------------------------------------Linked List--------
+import sys
+
+sys.path.append("../doubly_linked_list")
+from doubly_linked_list import DoublyLinkedList
+
+
+
+class Stack:
+    def __init__(self):
+        self.size = 0
+        self.storage = DoublyLinkedList()
+
+    def __len__(self):
+        return len(self.storage)
+
+    def push(self, value):
+        return self.storage.add_to_head(value)
+
+    def pop(self):
+        if len(self.storage) > 0:
+            return self.storage.remove_from_head()
