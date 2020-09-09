@@ -33,20 +33,21 @@ class Queue:
 
 #-------------------------single_linked_lists-----------------------------
 
+import sys
 
+sys.path.append("../single_linked_list")
+from single_linked_lists import LinkedList
 
+class Queue:
+    def __init__(self):
+        self.size = 0
+        self.storage = LinkedList()
 
+    def __len__(self):
+        return self.storage.length
 
-
-
-
-
-
-
-
-
-
-
+    def push(self, value):
+        return self.storage.add_to_tail(value)
 
 
 
