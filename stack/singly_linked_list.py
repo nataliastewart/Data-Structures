@@ -1,7 +1,7 @@
 class ListNode:
-    def __init__(self, value, next=None):
+    def __init__(self, value):
         self.value = value
-        self.next = next
+        self.next = None
 
 
 class LinkedList:
@@ -23,9 +23,31 @@ class LinkedList:
             self.tail = node
             self.head = node
 
-    def remove_from_tail(self):
+    def remove_tail(self):
+        if self.head is None and self.tail is None:
+            return None
+            
         value = self.tail.value
-        self.delete(self.tail)
+
+        if self.head is self.tail:
+            self.head = None
+            self.tail = None
+            return value
+
+        current = self.head
+        while current.next is not self.tail:
+            current = current.next
+
+        current.next = None
+        self.tail = None
+        self.tail = current
+        # value = self.tail.value
+        # current = self.head
+        # while current.next is not self.tail:
+        #     current = current.next
+        # current.next = None
+        # self.tail = current
+        
         return value
 
 

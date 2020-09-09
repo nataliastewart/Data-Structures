@@ -27,6 +27,31 @@ class Stack:
         if len(self.storage) > 0:
             return self.storage.pop()
 
+#-------------------------single_linked_lists-----------------------------
+
+import sys
+
+sys.path.append("../single_linked_list")
+from single_linked_lists import LinkedList
+
+class Stack:
+    def __init__(self):
+        self.size = 0
+        self.storage = LinkedList()
+
+    def __len__(self):
+        return self.storage.length
+
+    def push(self, value):
+        return self.storage.add_to_tail(value)
+#make sure we are adding and removing from the same side (head or tail)
+
+    def pop(self):
+        if len(self.storage) > 0:
+            return self.storage.remove_from_tail()
+
+
+
 #------------------------------------------------Linked List--------
 import sys
 

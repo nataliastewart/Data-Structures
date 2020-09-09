@@ -30,16 +30,29 @@ class Queue:
             res = self.storage[0]
             self.storage = self.storage[1:]
         return res
-#--------------------------linked-----------------------------------------
-from doubly_linked_list import DoublyLinkedList
 
-"""
-A queue is a data structure whose primary purpose is to store and
-return elements in First In First Out order. 
-@@ -13,16 +15,41 @@
-Stretch: What if you could only use instances of your Stack class to implement the Queue?
-         What would that look like? How many Stacks would you need? Try it!
-"""
+#-------------------------single_linked_lists-----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#--------------------------DoublyLinkedList-----------------------------------------
+from doubly_linked_list import DoublyLinkedList
 
 
 class Queue:
