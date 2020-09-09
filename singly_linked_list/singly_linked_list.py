@@ -41,12 +41,7 @@ class LinkedList:
         current.next = None
         self.tail = None
         self.tail = current
-        # value = self.tail.value
-        # current = self.head
-        # while current.next is not self.tail:
-        #     current = current.next
-        # current.next = None
-        # self.tail = current
+    
         
         return value
 
