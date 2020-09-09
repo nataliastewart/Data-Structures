@@ -36,7 +36,7 @@ class Queue:
 import sys
 
 sys.path.append("../single_linked_list")
-from single_linked_lists import LinkedList
+from single_linked_list import LinkedList
 
 class Queue:
     def __init__(self):
