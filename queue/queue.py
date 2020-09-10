@@ -25,18 +25,18 @@ class Queue:
         return self.storage.append(value)
 
     def dequeue(self):
-        res = None
-        if len(self.storage):
-            res = self.storage[0]
-            self.storage = self.storage[1:]
-        return res
+        # res = None
+        if len(self.storage) > 0:
+            # res = self.storage[0]
+            # self.storage = self.storage[1:]
+            return self.storage.pop(0)
 
 #-------------------------single_linked_lists-----------------------------
 
-import sys
+# import sys
 
-sys.path.append("../single_linked_list")
-from single_linked_list import LinkedList
+# sys.path.append("./single_linked_list")
+# from single_linked_list import LinkedList
 
 class Queue:
     def __init__(self):

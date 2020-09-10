@@ -29,10 +29,10 @@ class Stack:
 
 #-------------------------single_linked_lists-----------------------------
 
-import sys
+# import sys
 
-sys.path.append("../single_linked_list")
-from single_linked_list import LinkedList
+# sys.path.append("../single_linked_list")
+# from single_linked_list import LinkedList
 
 class Stack:
     def __init__(self):
